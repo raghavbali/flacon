@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Server Monitor</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+	<!--
+      <div class="pull-left">
+        <h1><a href="#intro" class="scrollto">Server Monitoring</a></h1>
+         Uncomment below if you prefer to use an image logo
+        <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>
+      </div>
+	-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="/">Server Monitoring</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="/ps_status"> Process Stats </a>&nbsp;&nbsp;</li>
+          <li class="nav-item"><a href="/memory_status"> Memory Stats </a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <main id="main">
+<!--
+  <div class="jumbotron jumbotron-fluid">
+		  <div class="container">
+			<h1 class="display-4">Server Details</h1>
+			{% for key, value in config_details.items() %}
+				<h5>{{ key }}: {{value}}</h5>
+			{% endfor %}
+		  </div>
+	</div>
+-->
+    <section>
+      <div class="container">
+        <header class="section-header">
+          <h3>Server Status</h3>
+		  <div class="tbl-header">
+		  {{ table }}
+		  </div>
+        </header>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>flacon Team, India</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+</html>
